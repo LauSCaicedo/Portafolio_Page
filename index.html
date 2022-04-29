@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title> My Portafolio Page</title>
@@ -19,27 +19,28 @@
             <div class="logo">
                 <a href="index.html">
                     LC
-                    <div class="NameTeam">
+                    <div class="MeName">
                         Laura Sofía Caicedo Henao
                     </div>
                 </a>
             </div>
-            <div class="dev">
+            <div class="back-dev">
                 🌺Backend Developer🌺
             </div>
-            <nav class="menu">
+            <nav>
                 <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                    <button type="button" class="btn" onclick="deploy()">Menu</button>
+                    <li>
+                        <a href="#" class="nav-link ghost">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
+                    <li>
+                        <a href="#projects" class="nav-link ghost">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about me" class="nav-link">About me</a>
+                    <li>
+                        <a href="#about me" class="nav-link ghost">About me</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                    <li>
+                        <a href="#contact" class="nav-link ghost">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -48,16 +49,16 @@
     <main>
         <!-- Introdution -->
         <div id="home">
-            <div class="containers" id="desc">
+            <div class="containers" id="description">
                 <div class="row">
-                    <div class="col-6 col-xs-12">
+                    <div class="col-md-6 col-12">
                         <div class="containers" id="descrip">
                             <h1>WELCOME TO MY PORTAFOLIO</h1>
                             <p> Description to my portafolio</p>
                         </div>
                     </div>
-                    <div class="col-6 col-xs-12">
-                        <img width="450"
+                    <div class="col-md-6 col-12">
+                        <img class="img_girl" width="450"
                             src="https://www.coreplus.com.au/wp-content/themes/true-theme/contactus/images/contact-us.gif" />
                     </div>
                 </div>
@@ -67,7 +68,7 @@
         <div class="projectscont" id="projects">
             <h2><u>Projects</u></h2>
             <div class="row">
-                <div class="col-6 col-xs-12">
+                <div class="col-md-6 col-12">
                     <div class="containers" id="pros">
                         <h3> Print F funtcion Clone</h3>
                         <hr style="border: .125rem solid gray;">
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-xs-12">
+                <div class="col-md-6 col-12">
                     <div class="containers" id="pros">
                         <h3> Print F funtcion Clone</h3>
                         <hr style="border: .125rem solid gray;">
@@ -103,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-xs-12">
+                <div class="col-md-6 col-12">
                     <div class="containers" id="pros">
                         <h3> Print F funtcion Clone</h3>
                         <hr style="border: .125rem solid gray;">
@@ -124,11 +125,11 @@
             </div>
         </div>
         <hr>
+        <!-- About me -->
         <div class="out" id="about me">
             <h2><u>About me</u></h2>
-            <div class="containers">
+            <div class="containers ajuste_aboutme col-md-6 col-11">
                 <div class="aboutme">
-                    <!-- About me -->
                     <p>I am...</p>
                     <img src='images/Me.jpg' width="200" height="200"
                         style="border-radius: 2rem; border: 0.2rem solid pink; box-shadow: pink 0px 7px 25px 0px; padding: 0.3rem;">
@@ -157,6 +158,15 @@
             <p class="footer-copyright" style="text-align: center;">© 2022 ♥ My Portafolio Page, Laura Caicedo.</p>
         </div>
     </footer>
+    <!-- Function for deploy nav -->
+    <script>
+        function deploy() {
+            let as = document.getElementsByClassName('nav-link');
+            for (let x = 0; x < as.length; x++) {
+                as[x].classList.toggle('ghost');
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,8 +1,16 @@
+/* My fonts familys */
+@font-face {
+    font-family: 'nanu-regular';
+    src: url("/fonts/NanumMyeongjo-Regular.ttf");
+}
+
+/* Body style */
 body {
     background-image: url(images/Rose.jpg);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Header style */
 .headers {
     position: fixed;
     top: 0;
@@ -11,34 +19,11 @@ body {
     z-index: 99;
     background-color: beige;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-}
-
-.nav-link {
-    font-family: 'poppins', sans-serif;
-    font-size: 1.4rem;
-    margin-left: 0.3rem;
-    padding: .5rem 1.5rem;
-    font-weight: 600;
-    color: grey;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-}
-
-.nav-link:hover {
-    color: lightcoral;
-    background-color: transparent;
-    border-radius: 1rem;
-    border: 3px solid pink;
-}
-
-main {
-    margin-top: 135px;
 }
 
 .logo a {
@@ -49,21 +34,54 @@ main {
     text-decoration: none;
 }
 
-.NameTeam {
+.MeName {
     font-size: 1.4rem;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'nanu-regular';
     text-align: left;
 }
 
-.dev {
+.back-dev {
     font-size: 1.6rem;
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Nav style */
+.btn {
+    background-color: pink;
+    display: none;
+}
+
+.nav-link {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+    color: grey !important;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: gray;
+}
+
+.nav-link:hover {
+    color: lightcoral;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 3px solid pink;
+}
+
+/* Main style */
+main {
+    margin-top: 135px;
+}
+
 .containers {
-    width: 50%;
     padding: 1rem;
     background-color: beige;
     border-radius: 3rem;
@@ -72,7 +90,9 @@ main {
     margin-top: 20px;
 }
 
-#desc {
+/* Introduction style */
+
+#description {
     width: 99%;
     background-color: transparent;
     border: 2px solid pink;
@@ -83,6 +103,22 @@ main {
     width: auto;
     margin-top: 0%;
     padding: 2rem;
+}
+
+.img_girl {
+    float: right;
+}
+
+/* Projects style */
+.projectscont {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+#pros {
+    border-bottom: .125rem solid gray;
+    width: auto;
 }
 
 #github {
@@ -96,21 +132,10 @@ main {
 #github a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 21px;
 }
 
-
-#pros {
-    border-bottom: .125rem solid gray;
-    width: auto;
-}
-
-.projectscont {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
-}
-
+/* About Me style */
 .out {
     text-align: center;
 }
@@ -121,10 +146,7 @@ main {
     text-align: center;
 }
 
-.photo {
-    border-radius: 2rem;
-}
-
+/* Contact style */
 .pointend {
     text-align: center;
     margin-top: 30px;
@@ -136,4 +158,38 @@ main {
     border: 2px solid lightcoral;
     text-align: center;
     box-shadow: lightcoral 0px 7px 25px 0px;
+}
+
+/* Media Query nav deploy */
+@media (max-width: 1220px) {
+    .btn {
+        display: inline-block;
+    }
+
+    .ghost {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+        background-color: beige;
+        border-radius: 3rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+}
+
+/* Media Query boton github project */
+@media (max-width: 1183px) {
+    #github {
+        width: 90%;
+    }
+}
+
+/* Media Query box contacts */
+@media (max-width: 740px) {
+    #iconscontac {
+        width: 90%;
+    }
 }
