@@ -1,0 +1,139 @@
+body {
+    background-image: url(images/Rose.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: beige;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-link {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+    color: grey;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: lightcoral;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 3px solid pink;
+}
+
+main {
+    margin-top: 135px;
+}
+
+.logo a {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #bf2271;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.NameTeam {
+    font-size: 1.4rem;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+.dev {
+    font-size: 1.6rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.containers {
+    width: 50%;
+    padding: 1rem;
+    background-color: beige;
+    border-radius: 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto auto;
+    margin-top: 20px;
+}
+
+#desc {
+    width: 99%;
+    background-color: transparent;
+    border: 2px solid pink;
+    box-shadow: lightcoral 0px 7px 29px 0px;
+}
+
+#descrip {
+    width: auto;
+    margin-top: 0%;
+    padding: 2rem;
+}
+
+#github {
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid lightcoral;
+    text-align: center;
+    box-shadow: pink 0px 7px 30px 0px;
+}
+
+#github a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+#pros {
+    border-bottom: .125rem solid gray;
+    width: auto;
+}
+
+.projectscont {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+.out {
+    text-align: center;
+}
+
+.aboutme {
+    padding: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+.photo {
+    border-radius: 2rem;
+}
+
+.pointend {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#iconscontac {
+    width: 30%;
+    background-color: transparent;
+    border: 2px solid lightcoral;
+    text-align: center;
+    box-shadow: lightcoral 0px 7px 25px 0px;
+}
