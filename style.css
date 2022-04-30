@@ -42,7 +42,7 @@ body {
 }
 
 .back-dev {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -160,6 +160,11 @@ main {
     box-shadow: lightcoral 0px 7px 25px 0px;
 }
 
+.provisional {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 /* Media Query nav deploy */
 @media (max-width: 1220px) {
     .btn {
@@ -172,12 +177,21 @@ main {
 
     .nav {
         flex-direction: column;
-        padding: 1rem;
-        background-color: beige;
-        border-radius: 3rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+
+@media (max-width: 761px) {
+    .provisional {
+        flex-direction: column;
     }
 
+    .MeName {
+        font-size: large;
+    }
+
+    .back-dev {
+        font-size: medium;
+    }
 }
 
 /* Media Query boton github project */
