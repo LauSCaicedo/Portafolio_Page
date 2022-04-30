@@ -1,15 +1,21 @@
 <div align='center'>
 <img src = "https://miro.medium.com/max/1400/1*b_yiDEmuzlZjoPUgkEJcww.jpeg" width = 1366px height = 200px>
-  <h3> Backend Developer </h3>
+  <h3> 🌺Backend Developer🌺 </h3>
 </div>
 
 <div>
 <h2> Description <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px></h2>
 <p>In this repository you can find my portfolio page where I show you the most outstanding projects that I have developed or have collaborated on according to my criteria, which will help me to show my skills.</p>
+<<<<<<< HEAD
 <pre><code>/**
 <a href="" style="background-color: grey">Direct link to my portfolio page</a>
 </div>
 </code><pre>
+=======
+<pre><code>
+<a href="">📍Direct Link To My Portfolio Page📌</a>
+</div></code></pre>
+>>>>>>> ad52a66b57b2886847052272d8b65b0e5c62e293
 
 <div>
 <h2> Connect with me <img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> </h2>
